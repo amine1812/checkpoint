@@ -1,0 +1,19 @@
+ALGORITHM checkpoint
+VAR
+ nb_car :INTEGER:=0:
+ nb_mot :INTEGER:=1
+ nb_voy :INTEGER:=0:
+ c:CHAR:='';
+BEGIN
+    WHILE (c<>.) DO
+        nb_car=nb_car+1
+        if(c='')then
+        nb_mot:=nb_mot+1
+        if (c='a' or c='i' or c='u' or c='y' or c='o' or c='e')then
+        nb_voy=nb_voy+1
+    END_WHILE
+    write('le nomber de voyels est' ,nb_voy)
+    write('le nomber de car acheter est',nb_car)
+    write('le nober de mot egale',nb_mot)
+    
+END
